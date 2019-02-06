@@ -101,7 +101,7 @@ public class shooting : MonoBehaviour {
         {
             GUI.Label(new Rect(100, 100, 200, 200), "YOU'RE MASTER");
         }
-
+        
     }
 }
 
