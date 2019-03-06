@@ -47,20 +47,12 @@ public class basemove : MonoBehaviour
     }
     IEnumerator waittime()
     {
-        // think about count =count + 1 solution until reaching 10 to make the code more efficiently but I don't knwo how to implement it with yield return new
-        Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(3);
-        Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(3); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(3); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(4); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(4); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(4); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(4); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(3); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(3); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(3); Instantiate(ballonprefab, transform.position, transform.rotation);
-        yield return new WaitForSeconds(3);
+        while (true)
+        {
+            // think about count =count + 1 solution until reaching 10 to make the code more efficiently but I don't knwo how to implement it with yield return new
+            Instantiate(ballonprefab, transform.position, transform.rotation);
+            yield return new WaitForSeconds(3);
+        }
 
 
     }
